@@ -1,12 +1,25 @@
+/*
+* Author : Kunchala Anil
+* Email : anilkunchalaece@gmail.com
+* Date : july 1 2016
+* This is a Master Code for I2C Master which Receives the Data from 3 I2C Arduino Slaves and Send them to Raspberry Pi Via UART
+*Bug in the Code : I2C Hangs If One Of Slaves Powered Down
+* Check the Discussion Om : http://forum.arduino.cc/index.php?topic=409677.new#new
+*/
+
+//Include the Wire library
 #include<Wire.h>
 
+//Define the Slave Addresses
 #define slaveA 8
 #define slaveB 9
 #define slaveC 10
 
-#define byteLength 2
-int noOfValues = 0;
+//Variale to Hold the Received byte Length From I2C Slaves
+byte byteLength = 2;
+//Variable to Check Whether data is Received Or Not
 boolean chRead = false;
+//variable to hold the Received Serial Data
 char ch;
 unsigned long int interval = 10; // Duration for Requesting the Data
 unsigned long int prevMillis = 0;
@@ -15,11 +28,6 @@ unsigned long int newMillis;
 void setup() {
   Wire.begin();//Address is Optional For Master
   Serial.begin(9600);
-//  Serial.println("Please enter --> a to read the data from Slave 1 ");
-//  Serial.println("Pleae enter -->  b to read the data from slave 2 ");
-//  Serial.println("Please enter --> c to read the data from slave 3");
-//  Serial.println("Please enter --> i to Change the Duration (Default Duaration is 10 Seconds)");
-  
 }
 
 void loop() {
@@ -61,9 +69,6 @@ void loop() {
     requestSlaveB();
     delay(100);
     requestSlaveC();
-    noOfValues++;
-    //Serial.print("The No Of vaues Received is -->\t");
-    //Serial.println(noOfValues);
   }
 
 }
