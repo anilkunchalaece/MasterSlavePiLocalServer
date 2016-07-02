@@ -1,3 +1,8 @@
+#Author : Kunchala Anil
+#Email : anilkunchalaece@gmail.com
+#date : 2 july 2016
+#This Code Receives the Data From Arduino Master via UART and Write them into CSV File
+
 import serial # for Serial
 import re #Regular Expression for Parsing the Data
 import datetime
