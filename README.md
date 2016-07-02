@@ -69,3 +69,13 @@ mysqlEx.py: This is a python Code to check connection to the mysql Database
 
 mysqlBug.py: Code is a improvisation for the mysqlEx.py
 
+<h4>References </h4>
+<br>1.http://raspberrywebserver.com/sql-databases/using-mysql-on-a-raspberry-pi.html</br>
+<br>2.https://www.stewright.me/2012/09/tutorial-install-phpmyadmin-on-your-raspberry-pi/</br>
+<br>3.http://raspberrywebserver.com/sql-databases/using-mysql-on-a-raspberry-pi.html</br>
+<br>4.https://www.raspberrypi.org/documentation/remote-access/web-server/apache.md</br>
+<br>5.https://www.jeremymorgan.com/tutorials/python-tutorials/how-to-connect-to-mysql-with-python/</br>
+<br>6.http://stackoverflow.com/questions/5785154/python-mysqldb-issues-typeerror-d-format-a-number-is-required-not-str</br>
+<br>7.http://forum.arduino.cc/index.php?topic=409677.new#new</br>
+<br>8.http://jamesreubenknowles.com/arduino-i2c-1680</br>
+<br>9.http://www.berryjam.eu/2014/07/advanced-arduino-i2c-communication/</br>
