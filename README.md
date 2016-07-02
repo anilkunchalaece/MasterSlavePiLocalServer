@@ -1,26 +1,47 @@
 # MasterSlavePiLocalServer
 Arduino Master Slave using I2C and Posting the Data To the Local Server Running On Apache2 using mySql and PHP
-Done by : Kunchala Anil
-Email : anilkunchalaece@gmail.com
-Date : July 2 2016
+<br><b>Done by : Kunchala Anil</b> </br>
+<br>Email : anilkunchalaece@gmail.com</br>
+<br>Date : July 2 2016</br>
 
-To Install Apache2 in Raspberry Pi use the Command ;
-  sudo apt-get install apache2 php5 libapache2-mod-php5
-After Finished Installing Use the Following Command to Restart the apache2 Server
-  sudo service apache2 restart
+1.To Install Apache2 in Raspberry Pi use the Command ;
+  <br><i> sudo apt-get install apache2 php5 libapache2-mod-php5 </i></br>
+2.After Finished Installing Use the Following Command to Restart the apache2 Server
+  <br><i> sudo service apache2 restart </i></br>
 
-After Restarting Check your Pi Ip Configuration with Command
-  ifconfig
+3.After Restarting Check your Pi Ip Configuration with Command
+  <br><i> ifconfig </i></br>
 
-Enter the ipNumber in the Web browser in locla lan. you can see Sample Webpage as 
-    It Works
+4.Enter the ipNumber in the Web browser in locla lan. you can see Sample Webpage as 
+  <br><b>  It Works</b></br>
     
 You can Edit the source file Location using
-    sudo nano /var/www/html/index.html
+    <br><i> sudo nano /var/www/html/index.html </i></br>
 note : You need to Change the Above file before Using It
 
-Installing Php5 In Raspberry Pi : use the following command to install the Php
-  sudo apt-get install php5 libapache2-mod-php5 -y
+5.Installing Php5 In Raspberry Pi : use the following command to install the Php
+  <br><i> sudo apt-get install php5 libapache2-mod-php5 -y </i></br>
+  
+6.Installing My Sql on Raspberry Pi : Use the Following Command to Install The mySql
+  <br><i>sudo apt-get install mysql-server python-mysqldb </i></br>
+  This will install the mysql server and Python MySQLdb Module Also
+  
+7.Installing Php My Admin  : use the following Command to Install the Phpmyadmin
+  <br><i> sudo apt-get install phpmyadmin </i></br>
+  
+8.Configure Apache2 to Work with Php My Admin
+  <br><i> nano /etc/apache2/apache2.conf </i></br>
+  <p> naviagate to the Bottom of the File and add the Following Line
+      <br> <i> Include /etc/phpmyadmin/apache.conf </i></br>
+      
+9.restart the apache2 
+    <br><i>/etc/init.d/apache2 restart</i></br>
+
+
+    
+
+
+
 
 
 
