@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+<!--
+Author : Kunchala Anil, Mohan Sir
+Email : anilkunchalaece@gmail.com
+Date : 2 july 2016
+
+This code receives the Data From MySQl and Displays it as Webpage
+-->
 <html>
 <head>
 <title> Sensor Data </title>
@@ -16,6 +23,10 @@
 </tr>
 
 </table>
+<footer>
+  <p>Done by: Kunchala Anil</p>
+  <p>Email : anilkunchalaece@gmail.com</p>
+</footer>
 </body>
 </html>
 
