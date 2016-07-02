@@ -37,6 +37,16 @@ note : You need to Change the Above file before Using It
 9.restart the apache2 
     <br><i>/etc/init.d/apache2 restart</i></br>
 
+<p>Before Running the Code create a Database in the SQL using Terminal
+<br>To enter in to the mysql shell enter</br>
+<br><i> mysql -u root -p <i><br>
+where root is the username
+
+use the Command <br><i>CREATE DATABASE database_name</i> to Create a Database</br>
+                <br><i>USE database_name</i> to change the current database</br>
+                <br><i>CREATE TABLE table_name</i> To Create a table in the Current Database</br>
+                </p>
+
 
     
 
