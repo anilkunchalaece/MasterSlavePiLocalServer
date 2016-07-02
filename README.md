@@ -3,7 +3,7 @@ Arduino Master Slave using I2C and Posting the Data To the Local Server Running 
 <br><b>Done by : Kunchala Anil</b> </br>
 <br>Email : anilkunchalaece@gmail.com</br>
 <br>Date : July 2 2016</br>
-
+<h3>PreRequisites</h3>
 1.To Install Apache2 in Raspberry Pi use the Command ;
   <br><i> sudo apt-get install apache2 php5 libapache2-mod-php5 </i></br>
 2.After Finished Installing Use the Following Command to Restart the apache2 Server
@@ -36,28 +36,18 @@ note : You need to Change the Above file before Using It
       
 9.restart the apache2 
     <br><i>/etc/init.d/apache2 restart</i></br>
-
+</br>
 <p>Before Running the Code create a Database in the SQL using Terminal
 <br>To enter in to the mysql shell enter</br>
-<br><i> mysql -u root -p <i><br>
-where root is the username
+<br><i> mysql -u root -p <i>where root is the username<br>
+</br>
 
-use the Command <br><i>CREATE DATABASE database_name</i> to Create a Database</br>
-                <br><i>USE database_name</i> to change the current database</br>
-                <br><i>CREATE TABLE table_name</i> To Create a table in the Current Database</br>
+use the Command <br>a.<i>CREATE DATABASE database_name</i> to Create a Database</br>
+                <br>b.<i>USE database_name</i> to change the current database</br>
+                <br>c.<i>CREATE TABLE table_name</i> To Create a table in the Current Database</br>
                 </p>
 
-
-    
-
-
-
-
-
-
-
-
-Files Description
+<h3>Files Description</h3>
 
 MasterCodeV3.ino: This is a Arduino Sketch for Master Which Receives the Data From 3 slaves via I2C and send the Data to the Raspberry Pi via UART
 
