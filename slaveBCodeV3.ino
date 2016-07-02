@@ -1,3 +1,8 @@
+/*
+* Author : Kunchala Anil
+* Email : anilkunchalaece@gmail.com
+* Date : july 1 2016
+*/
 #include<Wire.h>
 #define slaveB 9
 #define AnalogInputPin A0
