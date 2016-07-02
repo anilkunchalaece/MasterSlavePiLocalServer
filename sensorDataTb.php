@@ -1,4 +1,14 @@
 <!DOCTYPE html>
+
+<!DOCTYPE html>
+<!--
+Author : Kunchala Anil, Mohan Sir
+Email : anilkunchalaece@gmail.com
+Date : 2 july 2016
+
+This code receives the Data From MySQl and Displays it as Webpage as a Table
+-->
+
 <html>
 <head>
 <title> Sensor Data </title>
@@ -6,9 +16,6 @@
 
 <body>
 <h2> Sensor Data From 3 slaves</h2>
-
-
-
 
 <?php
 $serverName = "localhost";
@@ -48,5 +55,10 @@ echo "</table>";
 
 echo "Fetched Data Sucessfully";
 ?>
+
+<footer>
+  <p>Done by: Kunchala Anil</p>
+  <p>Email : anilkunchalaece@gmail.com</p>
+</footer>
 </body>
 </html>
