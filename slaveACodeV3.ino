@@ -1,3 +1,9 @@
+/*
+* Author : Kunchala Anil
+* Email : anilkunchalaece@gmail.com
+* Date : july 1 2016
+*/
+
 #include<Wire.h>
 #define slaveA 8
 #define AnalogInputPin A0
